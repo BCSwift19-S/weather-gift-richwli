@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CAEC76A822334251002B6AE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC76A722334251002B6AE7 /* AppDelegate.swift */; };
-		CAEC76AA22334251002B6AE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC76A922334251002B6AE7 /* ViewController.swift */; };
 		CAEC76AD22334251002B6AE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEC76AB22334251002B6AE7 /* Main.storyboard */; };
 		CAEC76AF22334252002B6AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEC76AE22334252002B6AE7 /* Assets.xcassets */; };
 		CAEC76B222334252002B6AE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEC76B022334252002B6AE7 /* LaunchScreen.storyboard */; };
+		CAEC76BA22334316002B6AE7 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC76B922334316002B6AE7 /* DetailVC.swift */; };
+		CAEC76BC2233495B002B6AE7 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC76BB2233495B002B6AE7 /* ListVC.swift */; };
+		CAEC76BE22334C60002B6AE7 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEC76BD22334C60002B6AE7 /* PageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CAEC76A422334251002B6AE7 /* WeatherGift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherGift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEC76A722334251002B6AE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAEC76A922334251002B6AE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAEC76AC22334251002B6AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAEC76AE22334252002B6AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEC76B122334252002B6AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAEC76B322334252002B6AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAEC76B922334316002B6AE7 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		CAEC76BB2233495B002B6AE7 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		CAEC76BD22334C60002B6AE7 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		CAEC76A622334251002B6AE7 /* WeatherGift */ = {
 			isa = PBXGroup;
 			children = (
+				CAEC76B922334316002B6AE7 /* DetailVC.swift */,
+				CAEC76BB2233495B002B6AE7 /* ListVC.swift */,
+				CAEC76BD22334C60002B6AE7 /* PageVC.swift */,
 				CAEC76A722334251002B6AE7 /* AppDelegate.swift */,
-				CAEC76A922334251002B6AE7 /* ViewController.swift */,
 				CAEC76AB22334251002B6AE7 /* Main.storyboard */,
 				CAEC76AE22334252002B6AE7 /* Assets.xcassets */,
 				CAEC76B022334252002B6AE7 /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAEC76AA22334251002B6AE7 /* ViewController.swift in Sources */,
+				CAEC76BC2233495B002B6AE7 /* ListVC.swift in Sources */,
+				CAEC76BE22334C60002B6AE7 /* PageVC.swift in Sources */,
 				CAEC76A822334251002B6AE7 /* AppDelegate.swift in Sources */,
+				CAEC76BA22334316002B6AE7 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

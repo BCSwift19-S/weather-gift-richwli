@@ -10,7 +10,8 @@ import UIKit
 
 class PageVC: UIPageViewController {
     var currentPage = 0
-    var locationsArray = ["Local City", "Syndney, Australia", "Accra, Ghana", "Uglich, Russia"]
+    
+    var locationsArray = [WeatherLocation]()
     var pageControl: UIPageControl!
     var listButton: UIButton!
     var barButtonWidth: CGFloat = 44
@@ -21,6 +22,9 @@ class PageVC: UIPageViewController {
         delegate = self
         dataSource = (self as! UIPageViewControllerDataSource)
         
+        var newLocation = WeatherLocation()
+        newLocation.name = "Unknown Weather Location"
+        locationsArray.append(newLocation)
         setViewControllers([createDetailVC(forPage: 0)],direction: .forward, animated: false, completion: nil)
 }
     override func viewDidAppear(_ animated: Bool){
@@ -79,7 +83,6 @@ class PageVC: UIPageViewController {
         currentPage = min(max(0,page), locationsArray.count-1)
         
         let detailVC = storyboard!.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
-        
         detailVC.locationsArray = locationsArray
         detailVC.currentPage = currentPage
         return detailVC

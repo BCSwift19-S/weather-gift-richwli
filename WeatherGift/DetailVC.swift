@@ -76,7 +76,7 @@ extension DetailVC: CLLocationManagerDelegate {
         currentLocation = locations.last
         let currentLatitude = currentLocation.coordinate.latitude
         let currentLongitude = currentLocation.coordinate.longitude
-        let currentCoordinates = "\(currentLatitude)\(currentLongitude)"
+        let currentCoordinates = "\(currentLatitude),\(currentLongitude)"
         print(currentCoordinates)
         dateLabel.text = currentCoordinates
         geoCoder.reverseGeocodeLocation(currentLocation, completionHandler: {
@@ -90,6 +90,7 @@ extension DetailVC: CLLocationManagerDelegate {
             }
             self.locationsArray[0].name = place
             self.locationsArray[0].coordinates = currentCoordinates
+            self.locationsArray[0].getWeather()
             self.updateUserInterface()
     })
     }
